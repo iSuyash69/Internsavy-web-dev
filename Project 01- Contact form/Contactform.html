@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us Form</title>
+    <link rel="icon" type="image/x-icon" href="c:\Users\ACER\Downloads\blue_repicthousebase_1484603073\blue_re-pict-house-base.png_512.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Source+Sans+Pro&display=swap'); */
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+  top:18px;
+  font-family: 'Source Sans Pro';
+}
+
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+.content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  bottom: 46px;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+  position: relative;
+  bottom: 41px;
+}
+
+.container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+  position: relative;
+  top: 13px;
+  font-size: 30px;
+}
+
+.right-side .input-box {
+  height: 55px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+  position: relative;
+  top: 16px;
+}
+
+.right-side .message-box {
+  min-height: 110px;
+}
+
+.right-side .input-box textarea {
+  padding-top: 6px;  
+  padding-top: 6px;
+  font-family: sans-serif;
+  top: 18px;
+}
+
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 12px;
+}
+
+.button input[type="button"]:hover {
+  background: #5029bc;
+}
+
+  .container .content {
+    flex-direction: column-reverse;
+  }
+
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container .content .left-side::before {
+    display: none;
+  }
+
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .edit1 {
+    position: relative;
+    top: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+  }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="address">
+              <img src="c:\Users\ACER\Downloads\—Pngtree—vector location icon_4231903.png"
+                  style="position: relative;
+                         width: 88px;
+                         bottom: 45px;">
+            </div>
+            <div class="topic">Address</div>
+            <div class="text-one">15 Street, NYC12</div>
+            <div class="text-two">Washigton DC 06</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="address">
+              <img src="c:\Users\ACER\Downloads\pngwing.com.png"
+                  style="position: relative;
+                         width: 63px;
+                         bottom: 40px;">
+            </div>
+            <div class="topic">Phone</div>
+            <div class="text-one">+0098 9822 564</div>
+            <div class="text-two">+0096 5034 567</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="address">
+              <img src="c:\Users\ACER\Downloads\vecteezy_email-and-mail-icon-black_20009614_325.png"
+                  style="position: relative;
+                         width: 88px;
+                         bottom: 45px;">
+            </div>
+            <div class="topic">Email</div>
+            <div class="text-one">measaintern45@gmail.com</div>
+            <div class="text-two">aim.microsoft24@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Get in touch</div>
+          <p class="edit1">Email us with any questions or inquiries. Feel free to connect with us, we would be happy to answer your questions and know more about you. You can also call us on the given contact number 24/7</p>
+          <form action="d:\programming\Intern\thankyou.html">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
