@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+        :root {
+    --primary: rgb(29, 221, 189);
+    --bgDark: rgb(12, 12, 12);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(0, 59, 50);
+    --bgLight: rgb(190, 181, 181);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background-color: var(--bgDark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+  }
+  header nav .left a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+  header nav .left a:hover {
+    color: var(--primary);
+  }
+  header nav {
+    padding: 2rem 0;
+  }
+  header nav .logo {
+    margin-right: 3rem;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .hero {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .hero .left img {
+    width: 378px;
+    height: 418px;
+    margin: 70px;
+    top: -40px;
+    left: 45px;
+    border-radius: 30px;
+    position: relative;
+  }
+  .hero .right {
+    color: var(--white);
+    margin-top: -7rem;
+    position: relative;
+    right: 83px;
+  }
+  .hero .right h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  .hero .right h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  .hero .right h1 span {
+    color: var(--primary);
+  }
+  .hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+  }
+  
+  section {
+    padding: 6rem;
+  }
+  section.about h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  section.about h1 span {
+    color: var(--primary);
+  }
+  section.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  section.about p {
+    font-family: "Lato", sans-serif;
+    color: var(--secondary);
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+  }
+  section.about .socials {
+    display: flex;
+  }
+  section.about .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    margin-right: 0.8rem;
+    border-radius: 50%;
+  }
+  section.about .socials a:hover {
+    background: var(--primary);
+  }
+  
+  section.services {
+    background: rgb(17, 17, 17);
+  }
+  .services-head {
+    color: rgb(10, 9, 9);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+    color: var(--primary);
+  }
+  .services-head + p {
+    color: var(--white);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    font-weight: 400;
+  }
+  .card img {
+    width: 135px;
+    background: white;
+    border-radius: 12px
+  }
+  section.services .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+  section.services .card-grid .card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    bottom: 7px;
+    left: -3px;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease;
+    border-radius: 16px;
+  }
+  section.services .card-grid .card img {
+    position: absolute;
+    top: -6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var();
+  }
+  section.services .card-grid .card h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  section.services .card-grid .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--seconday);
+    line-height: 1.6;
+  }
+  section.services .card-grid .card:hover {
+    background: var(--primary);
+  }
+  section.services .card-grid .card:hover h2 {
+    color: var(--white);
+  }
+  section.services .card-grid .card:hover p {
+    color: var(--white);
+  }
+  
+  .flex {
+    display: flex;
+  }
+  .items-centre {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-right {
+    justify-content: right;
+  }
+  .btn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+  .btn-primary {
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-top: -15rem;
+  }
+  .btn-primary:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  .btn-secondary:hover {
+    background: var(--primary);
+    color: var(--secondary);
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+    
+        <div class="container">
+            <nav class="flex items-centre justify-between">
+                <div class="left flex justfiy-right">
+                    <div> <a href="d:\programming\Intern\cv.html">Home</a> <a href="d:\programming\Intern\cv.html">About</a> <a href="d:\programming\Intern\cv.html">Portfolio</a> <a href="d:\programming\Intern\cv.html">Blog</a></li>
+                        <a href="#">More</a> </div>
+                </div>
+                <div class="right"> <a href="d:\programming\Intern\Project 01- Contact form\Contactform.html"><button class="btn btn-primary">Contact</button></a> </div>
+            </nav>
+        </div>
+        <div class="hero flex items-centre justify-between">
+            <div class="left flex-1 justify-center">
+                <img src="c:\Users\ACER\Downloads\IMG-7692.jpg" />
+            </div>
+            <div class="right flex-1">
+                <h6>HELLO</h6>
+                <h1>
+                    I'm SUYASH<br>
+                    <span>DESHPANDE</span>
+                </h1>
+                <p>
+                    My self Suyash Deshpande Currently pursuing B.E in computer science and design . My day starts on VS code . Have a good amount of interest in Web development , I love to design webpages . Also exploringdifferent development fields , currently looking forward at AppDevelopment .
+                    A cubicle at Microsoft is the goal
+                </p>
+                <div><a href="d:\programming\Intern\resume.html"><button class="btn btn-secondary">DOWNLOAD CV</button></a></div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="services" style="background-color: white;">
+        <div class="container" style="
+    background-color: lightgrey;
+    border-radius: 22px;
+">
+            <h1 class="services-head" style="
+    position: relative;
+    bottom: 30px;
+    font-size: 26px;
+">Skills &amp; Expertise</h1>
+            <p style="padding: 15px;"></p>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80">
+                    <h2>Graphic Desgin</h2>
+                    <p>
+                        With a keen eye for aesthetics and a mastery of design tools, my graphic design expertise transforms ideas into captivating visual experiences that leave a lasting impression. From conceptualization to execution, I create innovative designs that seamlessly blend creativity and functionality, delivering impactful solutions for diverse clients.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://www.multirecruit.com/wp-content/uploads/2022/05/Skills-needed-to-be-a-web-Developer.png">
+                    <h2>Web Development</h2>
+                    <p>
+                        Drawing upon my extensive knowledge of HTML, CSS, and JavaScript, my web development expertise enables me to build dynamic and user-friendly websites. With a focus on responsive design and intuitive navigation, I craft engaging online experiences that seamlessly integrate functionality and aesthetics, driving results and enhancing the digital presence of businesses and individuals alike.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://ebizfiling.com/wp-content/uploads/2022/05/content-writing-2-1024x683.png">
+                    <h2>Content Writing</h2>
+                    <p>
+
+As a skilled content writer, I leverage the power of words to create compelling and engaging narratives. With meticulous research and a flair for storytelling, I craft captivating content that captivates audiences and communicates messages effectively. Whether it's informative articles, persuasive copy, or engaging blog posts, my expertise in content writing ensures that every piece is tailored to resonate with the target audience and achieve the desired impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
